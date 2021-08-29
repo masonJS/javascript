@@ -27,5 +27,14 @@ function foo(arr){
   }
 }
 
-foo([1, 2, 3, 4])
+// foo([1, 2, 3, 4])
 
+let x = 'global scope'
+
+function foo(){
+  // 2. x console.log
+  console.log(x)
+  let x = 'local scope'
+}
+
+foo()
